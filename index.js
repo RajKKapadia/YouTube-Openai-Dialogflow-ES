@@ -75,7 +75,11 @@ webApp.post('/dialogflow', async (req, res) => {
             );
         }
     } else {
-        res.sendStatus(200);
+        res.send(
+            {
+                fulfillmentText: `No handler for the action ${action}.`
+            }
+        );
     }
 });
 
