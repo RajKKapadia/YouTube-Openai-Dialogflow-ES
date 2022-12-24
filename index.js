@@ -1,5 +1,4 @@
 const express = require('express');
-const axios = require('axios');
 const { Configuration, OpenAIApi } = require("openai");
 require('dotenv').config();
 
@@ -59,7 +58,7 @@ webApp.post('/dialogflow', async (req, res) => {
     let action = req.body.queryResult.action;
     let queryText = req.body.queryResult.queryText;
 
-    if (action === 'input-unknown') {
+    if (action === 'input.unknown') {
         let result = await textGeneration(queryText);
         if (result.status == 1) {
             res.send(
