@@ -2,7 +2,7 @@
 Hey everyone, if you are looking for a connection between OpenAI and Dialogflow ES, then read more. You will learn how to connect your existing Dialogflow ES agent to openAI.
 
 # Youtube
-I have recorded a quick tutorial on this topic, you can watch it [here]().
+I have recorded a quick tutorial on this topic, you can watch it [here](https://youtu.be/OVvs32QTj4A).
 
 ### Things you will need
 * Dialogflow ES agent
